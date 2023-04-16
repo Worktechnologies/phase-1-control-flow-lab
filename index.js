@@ -1,11 +1,47 @@
-function scuberGreetingForFeet(){
-  // Write your code here!
-}
+function scuberGreetingForFeet(someValue){
 
-function ternaryCheckCity(){
-  // Write your code here!
-}
+  let result;
+  if (someValue <= 199)
+  {
+    result= "This one is on me"
+    
+  }
 
-function switchOnCharmFromTip(){
-  // Write your code here!
+  else if (someValue >=200  && someValue <=400)
+  {
+    result = "first 400 feet are free"
+   
+  }
+  else
+  {
+    result=" go to another option"
+    
+  }
+  return result;
 }
+console.log(scuberGreetingForFeet(500));
+
+function ternaryCheckCity(city){
+  // Write your code here!
+  //let city= Chandigarh;
+
+  return city ? "Chandigarh" : "Punjab";
+
+  
+}
+console.log(ternaryCheckCity(true));
+console.log(ternaryCheckCity(false));
+
+function switchOnCharmFromTip(time){
+  switch(time)
+  {
+    case "morning": 
+       return '$10';
+       break;
+    case "afternoon":
+      return "$20";
+    break;
+  
+  }
+  }
+var result= console.log(switchOnCharmFromTip("morning"));
